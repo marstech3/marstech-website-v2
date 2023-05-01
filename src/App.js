@@ -37,24 +37,6 @@ function App() {
     volume: 0.02
     });
 
-  // const amb = new Howl({
-  //   src: [ambient],
-  //   html5: true,
-  //   volume: 0.5,
-  //   onplay: function () {
-  //     for (let i = 1; i <= 7; i++) {
-  //       document.querySelector(`#stroke${i}`).classList.add("stroke");
-  //       document.querySelector(`#stroke${i}`).classList.remove("nostroke");
-  //     }
-  //   },
-  //   onpause: function () {
-  //     for (let i = 1; i <= 7; i++) {
-  //       document.querySelector(`#stroke${i}`).classList.add("nostroke");
-  //       document.querySelector(`#stroke${i}`).classList.remove("stroke");
-  //     }
-  //   },
-  // });
-
   function handleEnter() {
     document.querySelector('.loading-screen').remove()
     setTimeout(() =>{
@@ -101,20 +83,6 @@ function App() {
       window.addEventListener("resize", handleDetect);
     };
   }, []);
-
-
-  // For displaying an overlay when the device display is in Potrait mode
-  // useEffect(() => {
-  //   if((device==="mobile" && orientation==="landscape") || (device==="computer" && orientation==="desktop")){
-  //     // document.querySelector(".site-container").classList.remove("hide")
-  //     // document.body.style.overflow = 'hidden';
-  //     document.querySelector(".device-overlay-container").classList.add("move-out")
-  //   }
-  //   else{
-  //     // document.querySelector(".site-container").classList.add("hide")
-  //     document.querySelector(".device-overlay-container").classList.remove("move-out")
-  //   }
-  // }, [orientation, device])
   
 
   // To stop the scrolling until App is completely loaded on client side
@@ -193,13 +161,14 @@ function App() {
       />
     </div>
     
-    <div className="device-overlay-container">
+    {/* For showing overlay when device is mobile and in potrait mode */}
+    {/* <div className="device-overlay-container">
       <div className="rotation-overlay">
         <h3>Please rotate your device</h3>
         <img src={rotate} className="rotate-img" alt="rotate your device"></img>
         <h4 className="helper-text">This website is specifically<br/>designed for Desktop</h4>
       </div>
-    </div>
+    </div> */}
     
 
   </div>
@@ -207,26 +176,3 @@ function App() {
 }
 
 export default App;
-
-
-
-  // let aid;
-  // const [aid, setAid] = useState();
-  
-  // function handleBgSound() {
-  //   if (!amb.playing(aid) && !amb.playing()) {
-  //     const aid1 = amb.play();
-  //     // console.log("aid",aid)
-  //     // console.log("aid1",aid1)
-  //     setAid(aid1)
-  //     // console.log("aid",aid)
-  //     // console.log("aid1",aid1)
-  //     console.log(aid, "if");
-  //   } else if (amb.playing(aid)) {
-  //     amb.pause(aid);
-  //     console.log(aid, "Pause(ID)");
-  //   } else {
-  //     console.log(aid, "else");
-  //     amb.pause();
-  //   }
-  // }
