@@ -15,15 +15,15 @@ function Products(props) {
     });
 
   useEffect(() => {
-    if(props.qty === 3){
+    if(props.qty === 2){
       document.querySelector(`.left-inner-container`).style.transform = `translateY(-${0}00vh)`;
       document.querySelector(`.right-inner-container`).style.transform = `translateY(-${2}00vh)`;
     }
-    else if(props.qty === 4){
+    else if(props.qty === 3){
       document.querySelector(`.left-inner-container`).style.transform = `translateY(-${1}00vh)`;
       document.querySelector(`.right-inner-container`).style.transform = `translateY(-${1}00vh)`;
     }
-    else if(props.qty === 5){
+    else if(props.qty === 4){
       document.querySelector(`.left-inner-container`).style.transform = `translateY(-${2}00vh)`;
       document.querySelector(`.right-inner-container`).style.transform = `translateY(-${0}00vh)`;
     }
