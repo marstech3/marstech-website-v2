@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../App.scss";
 import "./Ovations.scss";
-import ext from "../../Assets/icons/external.svg"
+import ext from "../../Assets/icons/external.svg";
 import cre from "../../Assets/images/cre.png";
 import gepl from "../../Assets/images/gepl.png";
 import alf from "../../Assets/images/alf.png";
@@ -51,7 +51,11 @@ function Ovations() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={ext} className={geplVisible ? "viz" : "inviz"} alt="external link"></img>
+                <img
+                  src={ext}
+                  className={geplVisible ? "viz" : "inviz"}
+                  alt="external link"
+                ></img>
               </a>
             </h3>
             <p>
@@ -79,7 +83,11 @@ function Ovations() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={ext} className={creVisible ? "viz" : "inviz"} alt="external link"></img>
+                <img
+                  src={ext}
+                  className={creVisible ? "viz" : "inviz"}
+                  alt="external link"
+                ></img>
               </a>
             </h3>
             <p>
@@ -108,7 +116,11 @@ function Ovations() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={ext} className={susVisible ? "viz" : "inviz"} alt="external link"></img>
+                <img
+                  src={ext}
+                  className={susVisible ? "viz" : "inviz"}
+                  alt="external link"
+                ></img>
               </a>
             </h3>
             <p>
@@ -135,7 +147,11 @@ function Ovations() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={ext} className={alfVisible ? "viz" : "inviz"} alt="external link"></img>
+                <img
+                  src={ext}
+                  className={alfVisible ? "viz" : "inviz"}
+                  alt="external link"
+                ></img>
               </a>
             </h3>
             <p>
@@ -154,11 +170,7 @@ function Ovations() {
           <div className="piece">
             <h3>
               NPR
-              <a
-                href="#/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="#/" target="_blank" rel="noreferrer">
                 <img src={ext} className={"inviz"} alt="external link"></img>
               </a>
             </h3>
@@ -177,11 +189,7 @@ function Ovations() {
           <div className="piece">
             <h3>
               VVB Sports
-              <a
-                href="#/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="#/" target="_blank" rel="noreferrer">
                 <img src={ext} className={"inviz"} alt="external link"></img>
               </a>
             </h3>

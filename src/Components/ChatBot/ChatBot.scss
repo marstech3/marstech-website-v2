@@ -1,0 +1,134 @@
+.chatButton {
+  box-sizing: border-box;
+
+  position: absolute;
+  right: 0;
+  width: 86px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 28px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px 0px 20px 20px;
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.chatWindow {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  width: 300px;
+  height: 450px;
+  background: #f4f3f9;
+  border-radius: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .header {
+    background: #f4f3f9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 41px -18px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0 0;
+    .heading {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+
+  .content {
+    margin: 0 20px;
+    .leftMessage {
+      font-size: 14px;
+      line-height: 21px;
+      color: #494655;
+      margin-bottom: 10px;
+    }
+    .rightMessage {
+      background: linear-gradient(266.86deg, #494655 8.27%, #9b95b0 97.84%);
+      box-shadow: 0px 0px 41px -18px rgba(0, 0, 0, 0.25);
+      border-radius: 20px 0px 20px 20px;
+      padding: 10px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+  }
+
+  .bottom {
+    padding: 0 20px;
+
+    .inputBox {
+      position: relative;
+      img {
+        position: absolute;
+        right: 10px;
+        top: 25%;
+      }
+      input {
+        border: none;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        width: -webkit-fill-available;
+        box-shadow: 0px 0px 41px -18px rgba(0, 0, 0, 0.25);
+      }
+    }
+    .footer {
+      padding: 10px;
+    }
+  }
+}
+
+.sidebar {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  right: 90px;
+  width: 210px;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 20px 20px 0px 20px;
+
+  .sd-body {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    ul {
+      padding: 0;
+    }
+  }
+  .sd-body ul li {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .sd-body ul li .sd-link {
+    padding: 10px 5px;
+    cursor: pointer;
+    color: #494655;
+  }
+  .report {
+    padding: 10px 5px;
+    cursor: pointer;
+    color: #da6635;
+  }
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
